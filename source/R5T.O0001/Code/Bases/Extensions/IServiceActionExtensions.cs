@@ -11,7 +11,7 @@ namespace R5T.O0001
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="CreateProjectForExistingSolution"/> operation as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="CreateProjectForExistingSolution"/> operation as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<CreateProjectForExistingSolution> AddCreateProjectForExistingSolutionAction(this IServiceAction _,
             IServiceAction<IVisualStudioProjectFileOperator> visualStudioProjectFileOperatorAction,
@@ -25,7 +25,7 @@ namespace R5T.O0001
         }
 
         /// <summary>
-        /// Adds the <see cref="CreateSolutionInExistingRepository"/> operation as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="CreateSolutionInExistingRepository"/> operation as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<CreateSolutionInExistingRepository> AddCreateSolutionInExistingRepositoryAction(this IServiceAction _,
             IServiceAction<IVisualStudioSolutionFileOperator> visualStudioSolutionFileOperatorAction)
